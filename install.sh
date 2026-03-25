@@ -5,6 +5,8 @@ REPO_URL="${VAULT_REPO_URL:-https://github.com/joustonhuang/supervisor-secretvau
 INSTALL_DIR="${INSTALL_DIR:-$HOME/.supervisor-secretvault}"
 TARGET_BIN="${1:-$HOME/.local/bin}"
 
+echo "Using repository: $REPO_URL"
+
 echo "Installing supervisor-secretvault to $INSTALL_DIR..."
 
 if [ -d "$INSTALL_DIR" ]; then
