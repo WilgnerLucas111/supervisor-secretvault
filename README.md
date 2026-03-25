@@ -39,8 +39,7 @@ export SECRETVAULT_MASTER_KEY="$(openssl rand -hex 32)"
 ## Install / enable
 
 ```bash
-cd /home/little7/.openclaw/workspace/unifai/supervisor/supervisor-secretvault
-./install.sh
+curl -sSL https://raw.githubusercontent.com/joustonhuang/supervisor-secretvault/main/install.sh | bash
 export PATH="$HOME/.local/bin:$PATH"
 export SECRETVAULT_MASTER_KEY="$(openssl rand -hex 32)"
 supervisor-secretvault init
@@ -137,7 +136,7 @@ Audit logs live in `audit/YYYY-MM-DD.jsonl`.
 Uses fake secrets only.
 
 ```bash
-cd /home/little7/.openclaw/workspace/unifai/supervisor/supervisor-secretvault
+curl -sSL https://raw.githubusercontent.com/joustonhuang/supervisor-secretvault/main/install.sh | bash
 npm test
 ```
 
